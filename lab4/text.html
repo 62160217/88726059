@@ -1,0 +1,33 @@
+<input type="text" placeholder="?" id="number">
+<button onclick="guess()">Guess</button>
+<div id="hist"></div>
+<div id="result"></div>
+
+<button onclick="over()">Start over</button>
+<script>
+       rn = Math.floor(Math.random()*100);
+alert(rn);
+       function guess(){
+           hist = document.getElementById('hist');
+           number = document.getElementById('number');
+           hist.innerHTML = hist.innerHTML+number.value +" "
+           result =document.getElementById('result');
+           if (number.value < rn){
+               result.innerHTML ="น้อยไป"
+           }else if(number.value > rn){
+               result.innerHTML ="มากไป"
+           }else {
+               result.innerHTML ="ถูกต้อง"
+           }
+                  }
+        function over(){
+            hist = document.getElementById('hist');
+           number = document.getElementById('number');
+           result =document.getElementById('result');
+           hist.innerHTML ="";
+           result.innerHTML="";
+           number.value="";
+           rn = Math.floor(Math.random()*100);
+        }
+
+</script>

@@ -1,0 +1,27 @@
+body{
+    background-image: url("p1.jpg");
+
+}
+p {
+    font-size: 12;
+    font-family: "Tahoma";
+}
+table,tr,td{
+    padding: 8px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 240px;
+}
+table,tr,td{
+    padding: 8px;
+    color: #ffffff;
+    color: #F0F0F0;
+    color: #515151;
+    color: #C0D0FF ;
+    color: #000000;
+    border-collapse: collapse;
+    width: 240px;
+}
+tbody{
+    background-image: url("p2.jpg");
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>โปรแกรม สูตรคูณ - multi.html</p>
+
+<script>
+    function multi(b) {
+        div = document.getElementById('disp');
+        div.innerHTML = ""; 
+        for (i = 1; i <= 12; i++) {
+            div.innerHTML += b + " x " + i + " = " + (b * i) + "<br>";
+        }
+    }
+    
+</script>
+    
+<input type="text" placeholder="สูตรคูณแม่ X" onkeyup="multi(this.value);">
+<div id="disp"></div>
+
+</body>
+</html>
